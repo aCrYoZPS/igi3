@@ -1,7 +1,11 @@
+from my_io.menu import menu_item
+
+
 def taylor(x: float, n: int) -> float:
     return 2/((2*n + 1) * x ** (2*n + 1))
 
 
+@menu_item(1)
 def calculate_series(x: float, precision: float) -> int:
     """
     Function that calculates number of iterations necessary to calculate value of function ln(x+1)/ln(x-1)
