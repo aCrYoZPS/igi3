@@ -4,7 +4,7 @@ def input_int() -> int:
     :returns: correct whole number
     """
     while True:
-        input_str = input("Input a number")
+        input_str = input("Input a number: ")
         res = 0
         try:
             res = int(input_str)
@@ -21,7 +21,7 @@ def input_float() -> float:
     :returns: correct floating point number
     """
     while True:
-        input_str = input("Input a number")
+        input_str = input("Input a number: ")
         res = 0.0
         try:
             res = float(input_str)

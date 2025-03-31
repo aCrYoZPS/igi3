@@ -1,12 +1,13 @@
-from my_io.menu import menu_item
+from menu.menu import menu_item
 from my_io import checked_input
 
 
 @menu_item(5)
-def task5():
+def calculate_floats():
     """
     Function prompts user to input a sequence of floating point numbers and
-    finds the number with lowest absolute value and sum of all number after the first positive one
+    finds the number with lowest absolute value and sum of all number after
+    the first positive one
     :returns: tuple of format (min_abs_index, min_abs, sum)
     """
     n = checked_input.input_int()

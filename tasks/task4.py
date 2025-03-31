@@ -1,4 +1,4 @@
-from my_io.menu import menu_item
+from menu.menu import menu_item
 
 
 @menu_item(4)
@@ -9,8 +9,9 @@ def analyze_text():
     """
     text = "So she was considering in her own mind, as well as she could,"
     + "for the hot day made her feel very sleepy and stupid,"
-    + " whether the pleasure of making a daisy-chain would be worth the trouble"
-    + " of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her."
+    + " whether the pleasure of making a daisy-chain would be worth the"
+    + " trouble of getting up and picking the daisies, when suddenly"
+    + "a White Rabbit with pink eyes ran close by her."
 
     words = "".join(text.strip(".").split(",")).split(" ")
 

@@ -1,10 +1,11 @@
-from my_io.menu import menu_item
+from menu.menu import menu_item
 
 
 @menu_item(3)
 def analyze_text(text: str):
     """
-    Function that calculates number of numeric symbols and uppercase letters in input string
+    Function that calculates number of numeric symbols and uppercase letters in
+    input string
     :param text: string to be analyzed
     :returns: number of numeric symbols and uppercase letters
     """

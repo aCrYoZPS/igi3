@@ -1,6 +1,8 @@
 import my_io.checked_input as ci
+from menu.menu import menu_item
 
 
+@menu_item(2)
 def multiplicator():
     """
     Function that multiplies all numbers from stdin while they are less than 0
