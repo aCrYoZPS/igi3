@@ -32,12 +32,22 @@ def input_float() -> float:
     return res
 
 
-def input_float_arr(delim: float):
+def input_int_arr(predicate):
+    """
+    Function that returns a list of integers from stdinput
+    """
     result = []
     while True:
-        elem = input_float()
+        elem = input_int()
 
-        if elem == delim:
+        if not predicate(elem):
             return result
 
         result.append(elem)
+
+
+def gen_floats(n: int):
+    count = 0
+    while count < n:
+        yield input_int()
+        count += 1

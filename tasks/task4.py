@@ -5,15 +5,16 @@ from my_io.menu import menu_item
 def analyze_text():
     """
     Function that analyzes the given text
+    :returns: tuple of format (number_of_words, longest_index, longest)
     """
     text = "So she was considering in her own mind, as well as she could,"
     + "for the hot day made her feel very sleepy and stupid,"
     + " whether the pleasure of making a daisy-chain would be worth the trouble"
     + " of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her."
 
-    words = "".join(text.split(",")).split(" ")
+    words = "".join(text.strip(".").split(",")).split(" ")
 
-    print(f"Number of words: {len(words)}")
+    number_of_words = len(words)
 
     longest_index = 0
     max_len = 0
@@ -29,4 +30,4 @@ def analyze_text():
 
         i += 1
 
-    print(f"Longest word: {words[longest_index]} was found on index {longest_index}")
+    return (number_of_words, longest_index, words[longest_index])

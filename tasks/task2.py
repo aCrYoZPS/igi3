@@ -7,12 +7,9 @@ def multiplicator():
     :returns: result of multiplication
     """
     result = 1
-    while True:
-        a = ci.input_int()
+    numbers = ci.input_int_arr(lambda x: x < 0)
 
-        if a > 0:
-            break
-
-        result *= a
+    for number in numbers:
+        result *= number
 
     return result
